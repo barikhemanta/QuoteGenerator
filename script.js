@@ -66,7 +66,7 @@ function tweetQuote() {
 function whatsappShare() {
   const encodedText = encodeURIComponent(quoteText.textContent),
     encodedAuthor = encodeURIComponent(authorText.textContent),
-    whatsappUrl = `https://web.whatsapp.com/send?text=${quoteText.textContent} - ${authorText.textContent}`;
+    whatsappUrl = `https://whatsapp.com/send?text=${quoteText.textContent} - ${authorText.textContent}`;
   window.open(whatsappUrl, "_blank");
 }
 //event listeners
